@@ -2,7 +2,7 @@ import { VERSION } from '../VERSION';
 
 export const environment = {
   production: false,
-  environment: VERSION + '(dev)',
+  environment: VERSION,
   isHomerAPI: true,
   apiUrl: location.protocol + '//' + (location.host) + '/api/v3'
   //apiUrl: 'http://127.0.0.1:8080/api/v3'

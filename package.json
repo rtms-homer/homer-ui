@@ -6,10 +6,11 @@
     "start": "ng serve --port 80",
     "dev": "ng serve --port=8070 --configuration=development --source-map=true --vendorChunk=false --disable-host-check",
     "webapp": "ng serve --host 0.0.0.0 --configuration=development --port=8099 --disable-host-check",
-    "build": "ng build --configuration=production && gzip -9 ./dist/homer-ui/*.js && [ -d '../homer-app/dist/homer-ui' ] && cp -r ./dist/homer-ui/* ../homer-app/dist/homer-ui",
+    "build": "ng build --configuration=production && gzip -9 ./dist/homer-ui/*.js",
     "build-noenv": "ng build --configuration=production-noenv",
     "build-keep-js": "ng build --configuration=production && gzip -9 -k ./dist/homer-ui/*.js",
-    "build-dev": "ng build --configuration=development && [ -d '../homer-app/dist/homer-ui' ] && cp -r ./dist/homer-ui/* ../homer-app/dist/homer-ui",    
+    "build-dev": "ng build --configuration=development",    
+    "build-local": "ng build --configuration=development && [ -d '../homer-app/dist/homer-ui' ] && cp -r ./dist/homer-ui/* ../homer-app/dist/homer-ui",    
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
